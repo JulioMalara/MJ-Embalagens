@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.logo-mj {
+    height: 300px;
+}
+
+button {
+    color: white;
+    background-color: #18D80F;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+body {
+
+    height: 100vh;
+    background-image: url("./img/fundo.jpg");
+    background-size: cover;
+     
+}
+
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 100px;
+}
+
+.caixa-principal {
+    width: 100%;
+
+}
+
+h1 {
+    color:#0a5206;
+    font-size: 30px;
+}
+
+h3 {
+    color: #0a5206;
+    font-size: 20px;
+}
+
+
+p {
+    color: #0a5206;
+    font-size: 20px;
+}
+
+
+.caixa-img{
+    background-size: cover;
+    background: fixed;
+}
+
+.link-whatsapp img {
+    height: 80px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+
+}
+
+.header {
+display: flex;
+align-items: center;
+gap: 30px;
+margin: 30px;
+
+}
+
+.header img {
+    height: 60px;
+}
+
+.header a {
+    color: #18D80F;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.header a:hover {
+    color: #0a5206;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.formulario-fale-conosco {
+    background-color:black;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    top: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out ;
+}
+
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80F;
+
+}
+
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80F;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+     position: fixed;
+     top:0;
+     width: 100vw;
+     height: 100vh;
+     background: linear-gradient(109deg, rgba(116, 116, 117, 0.562) 15%, rgba(10, 12, 16, 0.99) 85%); 
+     transition: visibility 1s ease-in-out;
+}
+
+
+
+.quem-somos {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#00000080 ;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    width: 60%;
+    min-width: 400px;
+    min-height: 200px;
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.quem-somos.abrir {
+    display: flex;
+
+}
+
+.nossos-servicos {
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color:#00000080 ;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: left 1s ease-in-out ;
+}
+
+.modal2 {
+    width: 60%;
+    min-width: 400px;
+    min-height: 200px;
+    background-color: #ffffff8e;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar-servicos {
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.nossos-servicos.abrir2 {
+    display: flex;
+
+}
+
+    
+
+@media(max-width:1000px) {
+    p {
+       display:flex;
+       
+    }
+
+    .quem-somos-abrir,.nossos-servicos-abrir2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    
+    }
+
+    .caixa-mae {
+       flex-direction: column;
+       padding: 10px;
+       justify-content: flex-start;
+    }
+
+    .caixa-principal {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+
+    }
+
+
+   .header {
+       margin: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center ;
+   }
+
+
+    .header img {
+       display: none;
+
+
+    }
+
+    .header a {
+     font-size: 20px;
+     
+    }
+}
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.png" type="image/png">
+    <title>MJ Embalagens</title>
+</head>
+
+<body>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+    <div class="header">
+        <img src="./img/icon.png" alt="logo">
+        <a onclick="abrir()">Quem Somos</a>
+        <a onclick="abrir2()">Nossos Serviços</a>
+    </div>
+
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+
+            <img src="./img/icon.png" alt="logo da MJ" class="logo-mj">
+        </div>
+        <div class="caixa-principal">
+            <h1>MJ <strong>Embalagens</strong></h1>
+            <p>Sempre buscando a cada dia a excelência no nosso atendimento e entregas, para melhor atende-los.
+                <br> Peça seu orçamento sem compromisso, que iremos te responder com todo o prazer.
+            </p>
+
+            <button onclick="mostrarForm()">ENTRE EM CONTATO</button>
+
+        </div>
+
+
+        <div>
+            <a href="https://wa.me/5511973580648?text=Gostaria+de+pedir+um+orçamento." class="link-whatsapp">
+                <img src="./img/whatsapp.png" alt="link para o whatsapp">
+            </a>
+
+            <form class="formulario-fale-conosco" action="https://formcarry.com/s/2TJcAs7BcN0" method="POST"
+                enctype="multipart/form-data">
+                <input placeholder="Seu nome" type="text" name="nome">
+                <input placeholder="Seu telefone" type="tel" name="telefone">
+                <textarea placeholder="Digite aqui" name="duvida"></textarea>
+                <button type="submit">Pedir orçamento</button>
+            </form>
+        </div>
+
+        <div class="quem-somos" id="quem-somos">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <h1>Quem Somos</h1>
+                <h3>Somos uma empresa idônea, que esta a mais de 16 anos no mercado, prestando serviços a grandes
+                    empresas,
+                    restaurantes e instituições de ensino. Sempre priorizando o atendimento aos nossos clientes,
+                    executando nosso serviço com dedicação e empenho sempre.</h3>
+            </div>
+        </div>
+
+        <div class="nossos-servicos" id="nossos-servicos">
+            <div class="modal2">
+                <button class="fechar-servicos" id="fechar-servicos">X</button>
+                <h1>Nossos Serviços</h1>
+                <h3>Trabalhamos com a venda de embalagens, materiais descartáveis e produtos de limpeza.<br> Sempre com
+                    materiais e produtos
+                    de qualidade e preços justos. Atendemos São Paulo e algumas regiões da grande São Paulo (verficar a
+                    disponibilidade na sua região).<br>
+                    Para mais informações entrar em contato com nossos vendedores. </h3>
+            </div>
+        </div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
